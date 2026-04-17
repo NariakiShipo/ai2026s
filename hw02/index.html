@@ -17,11 +17,13 @@
 <!-- https://alexlenail.me/NN-SVG/about.html -->
 <link rel="icon" href="../hw00/favicon.svg"/>
 <style type="text/css">
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
-
   @font-face {
-    font-family:'113AC1012_woff2';
-    src: url(https://nariakishipo.github.io/ai2026s/hw02/Font_113AC1012.woff2); 
+    font-family: 'Font113AC1012';
+    src: url('./Font_113AC1012.ttf') format('truetype');
+  }
+
+  * {
+    font-family: 'Font113AC1012' !important;
   }
 
   table {
@@ -49,7 +51,7 @@
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       outline:none;
       font-size: 14px;
-      font-family: Trebuchet, Arial, sans-serif;
+      font-family: 'Font113AC1012', sans-serif;
       font-weight: bold;
       cursor:pointer;
       border:1px solid #ddd;
@@ -84,7 +86,7 @@
   body {
     background-color: rgb(106, 76, 156); /* #6A4C9C */
     color: rgb(106, 76, 156);
-    font-family: 'CircleFont', 'Noto Sans JP', serif;
+    font-family: 'Font113AC1012', serif;
   }
 
   .container-fluid {
