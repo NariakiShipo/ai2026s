@@ -153,7 +153,9 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      終於來到本學期最後一次的作業，這次的作業是使用ComfyUI去生成影片，經過了上次的生成圖片之後，
+      我對於撰寫提示詞的部分已經略有手感了，因此在本次生成上快速了許多，同時也感受到了現在的技術真的
+      進步的非常快，但是也代表著能學習到的東西更多了，希望未來有機會能在繼續做到相關的東西！
     </div>
   </div>
 
@@ -169,22 +171,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,13 +197,96 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">
+      <figcaption>Comfy UI 環境設定完成</figcaption>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
+      <img src="Comfyui.png"  width="100%"><br>
+    </div>
+  </div>
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 1</figcaption>
+      <img src="GIF_00002.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 2</figcaption>
+      <img src="GIF_00003.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 3</figcaption>
+      <img src="GIF_00004.png"  width="100%"><br>
     </div>
   </div>
 
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 1</figcaption>
+      <img src="GIF_00002.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0"  :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, wide shot, blue stage lights, waving hand",
+          "10" :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, medium shot, purple stage lights, hand on chest",
+          "20" :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, camera slowly zooming in, pink stage lights, eyes closed singing",
+          "30" :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, close-up, warm spotlight, mouth open singing passionately",
+          "40" :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, close-up, red stage lights, raising microphone high",
+          "50" :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, medium shot, golden stage lights, arm reaching out to crowd",
+          "60" :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, camera panning, green stage lights, dynamic pose, hair flowing",
+          "70" :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, low angle shot, blue and pink lights, jumping with energy",
+          "80" :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, medium shot, spotlight beams, both hands up",
+          "90" :"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, camera zooming out, colorful stage lights, confetti falling",
+          "100":"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, wide shot, rainbow stage lights, dramatic pose, crowd silhouette",
+          "110":"blue hair, dark plaid long-sleeved shirt, skirt, holding a microphone, singing on stage, energetic, full stage wide shot, bright finale lights, arms spread wide, confetti"
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2)
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 2</figcaption>
+      <img src="GIF_00003.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0"  :"little girl, black hair, penguin costume, playing with sand on the beach, sunny day, sitting, building sandcastle, wide shot, ocean background",
+          "10" :"little girl, black hair, penguin costume, playing with sand on the beach, sunny day, digging sand with hands, happy smile, medium shot",
+          "20" :"little girl, black hair, penguin costume, playing with sand on the beach, sunny day, scooping sand with bucket, camera slowly zooming in",
+          "30" :"little girl, black hair, penguin costume, playing with sand on the beach, sunny day, patting sandcastle, close-up, joyful expression",
+          "40" :"little girl, black hair, penguin costume, playing with sand on the beach, sunny day, holding seashells, close-up, curious look",
+          "50" :"little girl, black hair, penguin costume, playing with sand on the beach, sunny day, decorating sandcastle with shells, medium shot",
+          "60" :"little girl, black hair, penguin costume, playing with sand on the beach, sunny day, waddling like a penguin, gentle sea breeze, full body shot",
+          "70" :"little girl, black hair, penguin costume, playing with sand on the beach, sunny day, laughing and clapping, camera panning, waves in background",
+          "80" :"little girl, black hair, penguin costume, playing with sand on the beach, sunny day, splashing at the water edge, low angle shot, seagulls flying",
+          "90" :"little girl, black hair, penguin costume, playing with sand on the beach, golden afternoon light, running on the sand, wide shot, footprints",
+          "100":"little girl, black hair, penguin costume, playing with sand on the beach, golden afternoon light, sitting next to finished sandcastle, content smile",
+          "110":"little girl, black hair, penguin costume, playing with sand on the beach, sunset, waving at the camera, warm backlight, wide shot, calm ocean"
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2), ugly, deformed, disfigured, bad anatomy, extra limbs, extra fingers, missing fingers, mutated hands, blurry, low quality, low resolution, jpeg artifacts, watermark, text, signature, nsfw, nudity, adult, mature, two heads, malformed face, distorted face, bad proportions, cropped, out of frame, dark, gloomy
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 3</figcaption>
+      <img src="GIF_00004.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0"  :"1girl, young witch, long hair, wizard hat, magical forest at night, starry sky, glowing fireflies, standing, wide shot, fantasy atmosphere",
+          "10" :"1girl, young witch, long hair, wizard hat, magical forest at night, holding a magic wand, sparkles in the air, medium shot",
+          "20" :"1girl, young witch, long hair, wizard hat, magical forest at night, raising wand, glowing blue magic swirls, camera slowly zooming in",
+          "30" :"1girl, young witch, long hair, wizard hat, magical forest at night, casting a spell, floating glowing orbs, close-up, focused expression",
+          "40" :"1girl, young witch, long hair, wizard hat, magical forest at night, magic light bursting from wand, purple sparkles, close-up",
+          "50" :"1girl, young witch, long hair, wizard hat, magical forest at night, glowing mushrooms lighting up, green magical glow, medium shot",
+          "60" :"1girl, young witch, long hair, wizard hat, magical forest at night, summoning butterflies of light, camera panning, dreamy bokeh",
+          "70" :"1girl, young witch, long hair, wizard hat, magical forest at night, twirling gracefully, trail of stardust, dynamic pose, full body shot",
+          "80" :"1girl, young witch, long hair, wizard hat, magical forest at night, glowing magic circle on the ground, golden light rising, low angle shot",
+          "90" :"1girl, young witch, long hair, wizard hat, magical forest at night, shooting stars across the sky, rainbow aurora, wide shot",
+          "100":"1girl, young witch, long hair, wizard hat, magical forest at night, surrounded by floating glowing crystals, magical climax, cinematic lighting",
+          "110":"1girl, young witch, long hair, wizard hat, magical forest at night, standing peacefully under glowing tree, warm magical light, wide shot"
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2),ugly, deformed, disfigured, bad anatomy, bad hands, extra limbs, extra fingers, missing fingers, mutated hands, fused fingers, blurry, low quality, low resolution, jpeg artifacts, watermark, text, signature, nsfw, distorted face, bad proportions, cropped, out of frame, scary, creepy, multiple people, animal
+      </td>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
@@ -252,4 +337,3 @@
 
 </body>
 </html>
-
